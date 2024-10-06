@@ -1,0 +1,118 @@
+/* Define color scheme variables */
+:root {
+    --primary-color: #373A44; 
+    --secondary-color: #FCC112; 
+    --accent1-color: #596075; 
+    --accent2-color: #ffd700; 
+    --text-color: #000000;
+    --background-color: #ffffff;
+}
+
+/* General styles */
+body {
+    font-family: 'Open Sans',open-sans;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 1rem;
+}
+
+header img {
+    max-width: 100px;
+}
+
+nav a {
+    margin-left: 1rem;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+h1,h2{
+    color: var(--accent2-color);
+}
+nav a:hover {
+    color: var(--accent2-color);
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.hero-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'League Spartan', Open-Sans;
+    font-size: 3rem;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    color: white;
+}
+
+.hero article img {
+    float: right;
+    width: 150px;
+    height: auto;
+    margin-left: 1rem;
+}
+
+/* Sections */
+section {
+    padding: 2rem;
+    text-align: center;
+}
+
+section img {
+    max-width: 100px;
+    margin: 1rem;
+    height: 7rem;
+}
+
+/* Footer styles */
+footer {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+footer a img {
+    margin: 0 1rem;
+    width: 30px;
+   
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a:hover {
+    opacity: 0.7;
+}
