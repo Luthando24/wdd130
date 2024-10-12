@@ -1,4 +1,4 @@
-/* Define color scheme variables */
+/*Define color scheme variables---------------------------------------------------------------------*/
 :root {
     --primary-color: #373A44; 
     --secondary-color: #FCC112; 
@@ -7,7 +7,6 @@
     --text-color: #000000;
     --background-color: #ffffff;
 }
-
 /* General styles */
 body {
     font-family: 'Open Sans',open-sans;
@@ -16,18 +15,34 @@ body {
     margin: 0;
     padding: 0;
 }
-
-/* Header styles */
+/*Header Style---------------------------------------------------------------------*/
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    grid-template-columns: 120px 1fr 2fr;
     background-color: var(--primary-color);
-    padding: 1rem;
+    padding: 1px; 
 }
-
+.grid-content {
+    width: 73%;
+    margin-left: 5px;
+    height: 70%;
+    padding: 2px;
+    display:contents;
+    justify-content: space-between;
+    grid-template-columns: repeat(4, 2fr);
+    grid-gap: 20px;
+}
+.grid-content img{
+    width: 300px;
+    height: 200px;
+}
 header img {
-    max-width: 100px;
+   
+    margin: 0 0.25rem 0 1rem;
+	width: 80px;
+	height: auto;
 }
 
 nav a {
@@ -42,77 +57,99 @@ h1,h2{
 nav a:hover {
     color: var(--accent2-color);
 }
-
-/* Hero Section */
+/*HERO STYLING---------------------------------------------------------------------*/
 .hero {
-    position: relative;
-    text-align: center;
-    color: rgb(0, 0, 0);
-}
-
-.hero-img {
     width: 100%;
-    height: auto;
-    display: block;
+    height: 100vh;
+    position: relative;
+    background: url("/wdd130/wwr/images/Surfboards.avif")
+      no-repeat center center/cover;
+  }
+
+.hero-content {
+    position: relative;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 9rem;
+    z-index: 2;
+}
+.hero-content h1 {
+    font-weight: 700;
+   
+}
+.hero-content p {
+    color: #fff;
     
 }
-
-.hero h1 {
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: 'League Spartan', Open-Sans;
-    font-size: 3rem;
-}
-
-.hero article {
-    position: absolute;
-    bottom: 10%;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 1rem;
-    color: white;
-}
-
-.hero article img {
-    float: right;
-    width: 150px;
-    height: auto;
-    margin-left: 1rem;
-}
-
 /* Sections */
 section {
     padding: 2rem;
     text-align: center;
 }
+/*History Section---------------------------------------------------------------------*/
 
-section img {
-    max-width: 100px;
-    margin: 1rem;
-    height: 7rem;
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center
 }
-
-/* Footer styles */
+.history-img img {
+    width: 30px;
+    height: 20px;
+}
+.history-text {
+    padding-left: 0px; 
+}
+/*Adventure awaits for you- Section---------------------------------------------------------------------*/
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+    justify-content: space-between;
+}
+  /* Clear floats after image containers */
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+.column {
+    flex: 33.33%;
+    padding: 10px;
+    
+}
+.column img{
+    width: 300px;
+    height: 200px;
+}
+ /*Footer- Section---------------------------------------------------------------------*/
 footer {
     background-color: var(--secondary-color);
     color: white;
     padding: 1rem;
     text-align: center;
 }
-
-footer a img {
-    margin: 0 1rem;
-    width: 30px;
-   
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-
-footer a {
-    text-decoration: none;
+.footer-text {
+    flex-grow: 1;
 }
-
-footer a:hover {
-    opacity: 0.7;
+  
+.social-icons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 13px; /* Space between icons */
 }
+  
+.social-icons img {
+    width: 30px; 
+    height: 30px; 
+}
+  
