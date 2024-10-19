@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Whitewater-Rafting</title>
-    <meta name="description" content = " WWR">
-    <meta name="author" content="Luthando Valtyn">
+    <title>Contact Us - Rafting Company</title>
+    <meta name="description" content="Get in touch with Rafting Company. Contact us for inquiries, reservations, or suggestions.">
+    <meta name="author" content="">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -18,69 +18,83 @@
         </div>
         <nav>
             <a href="#">Index Page</a>
-            <a href="about.html">About Us</a>
+            <a href="/wwr/about.html">About Us</a>
             <a href="#">Trips</a>
-            <a href="#">Contact Us</a>
+            <a href="/wwr/Contact.html">Contact Us</a>
         </nav>
     </header>
     <main>
-      <!---Hero-->
-      <header class="hero">
-        <div class="hero-content">
-          <h1>Rapid Adventures</h1>
-          <p>At Rapids Adventures, we are passionate about offering thrilling and unforgettable white water rafting experiences for adventurers of all levels. Whether you’re a seasoned pro or a first-time rafter, we have a trip tailored to your needs that guarantees both excitement and safety. Our rafting adventures take you through some of the most stunning and challenging rapids in the country, surrounded by breathtaking landscapes and roaring rivers</p>
+     <!-- Company Information Section -->
+     <section id="company-info">
+        <h2>Contact Information</h2>
+        <p>Address: 123 River Road, Rapids City</p>
+        <p>Phone: (123) 456-7890</p>
+        <p>Email: info@raftingcompany.com</p>
+        <!-- Embedded Google Map -->
+        <div id="map">
+            <iframe src="https://www.google.com/maps/embed?..." width="600" height="450" allowfullscreen="" loading="lazy"></iframe>
         </div>
-      </header>
-        <section>
-          <h2>History</h2>
-          <div class="container">
-            <div class="history-image">
-              <img src="images/img6.jpeg" alt="happy-client">
-            </div>
-            <div class="history-text">
-              <p>Rapids Adventures began with a simple mission: to share the excitement and beauty of white water rafting with adventure seekers while fostering a deep respect for nature. Founded in 1998, the company started as a small, family-run business offering guided trips on the local rivers of Western Cape. The company’s dedication to safety, personalized experiences, and skilled guides quickly gained them a reputation as a trusted and exciting adventure provider in the region. Word spread, and soon adventurers from across the country began seeking out Rapids Adventures for their white water rafting experiences.</p>
-            </div>
-          </div> 
-        </section>
-        <section>
-          <h2>Adventure Waits for you!</h2>
-          <div class="row">
-              <div class="column">
-                  <figure>
-                      <img src="images/Rowingteam.avif" alt="Snow" style="width:100%">
-                      <figcaption>Enjoy as a team</figcaption>
-                  </figure>
-              </div>
-              <div class="column">
-                  <figure>
-                      <img src="images/heavywaters.avif" alt="Forest" style="width:100%">
-                      <figcaption>Adrenalin Rush</figcaption>
-                  </figure>
-              </div>
-              <div class="column">
-                  <figure>
-                      <img src="images/boatred.avif" alt="Mountains" style="width:100%">
-                      <figcaption>Calm Waters</figcaption>
-                  </figure>
-              </div>
-              <div class="column">
-                  <figure>
-                      <img src="images/alone.avif" alt="Mountains" style="width:100%">
-                      <figcaption>An elephant at sunset</figcaption>
-                  </figure>
-              </div>
-              <div class="column">
-                  <figure>
-                      <img src="images/amazon.avif" alt="Mountains" style="width:100%">
-                      <figcaption>Amazon</figcaption>
-                  </figure>
-              </div>
-          </div>
-      </section>
+    </section>
+
+    <!-- Employee Profiles Section -->
+    <section id="employees">
+        <h2>Meet Our Team</h2>
+        <div class="employee">
+            <img src="images/team1.jpg" alt="John Doe, CEO">
+            <p>John Doe - CEO</p>
+        </div>
+        <div class="employee">
+            <img src="images/team2.jpeg" alt="Jane Smith, Operations Manager">
+            <p>Jane Smith - Operations Manager</p>
+        </div>
+        <div class="employee">
+            <img src="images/team3.avif" alt="Michael Brown, Guide">
+            <p>Michael Brown - Guide</p>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact-form">
+        <h2>Contact Us</h2>
+        <form action="submit_form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <fieldset>
+                <legend>Purpose of your message:</legend>
+                <label>
+                    <input type="radio" name="purpose" value="General Inquiry" required>
+                    General Inquiry
+                </label>
+                <label>
+                    <input type="radio" name="purpose" value="Reservation Question">
+                    Reservation Question
+                </label>
+                <label>
+                    <input type="radio" name="purpose" value="Website Suggestion">
+                    Website Suggestion
+                </label>
+            </fieldset>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <label>
+                <input type="checkbox" name="newsletter" value="subscribe">
+                Please subscribe me to the monthly newsletter
+            </label>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
     </main>
     <footer>
       <div class="footer-content">
           <div class="footer-text">©2024 Cool Runnings, Luthando</div>
+          <a href="wireframe-link.jpg" target="_blank">View Contact Us Wireframe</a>
           <nav class="social-icons">
               <a href="https://facebook.com">
                   <img src="images/facebook-svgrepo-com.svg" alt="Facebook">

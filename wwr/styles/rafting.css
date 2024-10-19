@@ -152,4 +152,63 @@ footer {
     width: 30px; 
     height: 30px; 
 }
+
+
+
+/*Contact Form*/
+
+/* Google Map */
+#map iframe {
+    width: 100%;
+    height: 450px;
+    border: none;
+}
+
+/* Employee Profile */
+#employees {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.employee img {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.employee p {
+    text-align: center;
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+label, legend {
+    margin: 10px 0 5px;
+}
+
+input, textarea, button {
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+    max-width: 100%;
+}
+
+button {
+    background-color: #0284c7;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #02699b;
+}
+
   
