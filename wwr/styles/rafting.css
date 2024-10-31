@@ -223,7 +223,7 @@ button:hover {
     width: 97%;
     border-collapse: collapse; /* Removes gaps between table cells */
     background-color: #ffffff; /* Background color for table */
-    color: #000000; /* Text color */
+    color: #000000; 
 }
 
 .trip-table th, .trip-table td {
